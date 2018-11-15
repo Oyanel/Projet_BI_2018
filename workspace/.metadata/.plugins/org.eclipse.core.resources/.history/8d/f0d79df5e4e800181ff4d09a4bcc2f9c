@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_VXgSQejkEeiMB-e9oxGBUA" name="Departement" dataPackage="_VXgSQujkEeiMB-e9oxGBUA" Server="Localhost 127.0.0.1" FilePath="C:/TalendData/correspondance-code-insee-code-postal.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_VXgSQujkEeiMB-e9oxGBUA" name="default" dataManager="_VXgSQejkEeiMB-e9oxGBUA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_VXgSQ-jkEeiMB-e9oxGBUA" id="_o_KDwOjjEeiMB-e9oxGBUA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VXgSROjkEeiMB-e9oxGBUA" label="Code_commune_INSEE" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VXgSRejkEeiMB-e9oxGBUA" label="Nom_commune" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VXgSRujkEeiMB-e9oxGBUA" label="Code_postal" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VXgSR-jkEeiMB-e9oxGBUA" label="Libelle_acheminement" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VXgSSOjkEeiMB-e9oxGBUA" label="Ligne_5" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VXgSSejkEeiMB-e9oxGBUA" label="coordonnees_gps" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
