@@ -28,14 +28,19 @@ public class Routine_Info {
      * 
      * {Category} User Defined
      * 
-     * {param} String("obs") input: first.
+     * {param} String obs, String obsm, String choc
      * 
-     * {example} generateId("1","2","3") # 12.
+     * {example} generateId("1","2","3") # 010203.
      */
     public static String generateId(String obs, String obsm, String choc){
-    	if (null == obs || !isInt(obs) || null == obsm ||
-    			!isInt(obsm) || null == choc || !isInt(choc)) {
-    		return null;
+    	if (null == obs || !isInt(obs)){
+    		obs = "0";
+    	}
+    	if (null == obsm || !isInt(obsm)){
+    		obsm = "0";
+    	}
+    	if (null == choc || !isInt(choc)){
+    		choc = "0";
     	}
     	String result = format(obs) + format(obsm) + format(choc);    	
     	return result;
@@ -49,20 +54,12 @@ public class Routine_Info {
      * 
      * {Category} User Defined
      * 
-     * {param} int("i") input: first.
+     * {param} String s
      * 
-     * {example} toString(1) # "01".
+     * {example} toString("1") # "01".
      */
     public static String format(String s){
-    	if(s == null){
-    		return "00";
-    	}else if(s == "0"){
-    		return "00";
-    	}else if(Integer.parseInt(s) < 10){
-    		return "0" + s;
-    	}else{
-    		return s;
-    	}
+    	return String.format("%02d", Integer.parseInt(s));
     }
 
     /**
@@ -73,13 +70,13 @@ public class Routine_Info {
      * 
      * {Category} User Defined
      * 
-     * {param} int("i") input: first.
+     * {param} String obs.
      * 
      * {example} obstacle_fixe(1) # "Véhicule en stationnement".
      */
     public static String obstacle_fixe(String obs){
     	if (null == obs || !isInt(obs)) {
-    		return null;
+    		return "";
     	}
     	int i = Integer.parseInt(obs);
     	switch(i){
@@ -128,13 +125,13 @@ public class Routine_Info {
      * 
      * {Category} User Defined
      * 
-     * {param} int("i") input: first.
+     * {param} String obsm
      * 
      * {example} obstacle_mobile(1) # "Piéton".
      */
     public static String obstacle_mobile(String obsm){
     	if (null == obsm || !isInt(obsm)) {
-    		return null;
+    		return "";
     	}
     	int i = Integer.parseInt(obsm);
     	switch(i){
@@ -163,13 +160,13 @@ public class Routine_Info {
      * 
      * {Category} User Defined
      * 
-     * {param} int("i") input: first.
+     * {param} String choc
      * 
      * {example} choc(1) # "Avant".
      */
     public static String choc(String choc){
     	if (null == choc || !isInt(choc)) {
-    		return null;
+    		return "";
     	}
     	int i = Integer.parseInt(choc);
     	switch(i){
