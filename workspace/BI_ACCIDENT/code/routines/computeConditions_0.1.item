@@ -15,6 +15,8 @@ public class computeConditions {
      */
     public static String computeLum(Integer lum) {
         switch(lum == null?0:lum){
+        case 0:
+        	return "NA";
         case 1:
         	return "Plein jour";
 		case 2:
@@ -44,6 +46,8 @@ public class computeConditions {
      */
     public static String computeIntersection(Integer intersection) {
         switch(intersection == null?0:intersection){
+        case 0:
+        	return "NA";
         case 1:
         	return "Hors intersection";
 		case 2:
@@ -81,6 +85,8 @@ public class computeConditions {
      */
     public static String computeAtmos(Integer cndAtoms) {
         switch(cndAtoms == null? 0:cndAtoms){
+        case 0:
+        	return "NA";
         case 1:
         	return "Normale";
 		case 2:
@@ -118,6 +124,8 @@ public class computeConditions {
      */
     public static String computeCollision(Integer collision) {
         switch(collision == null? 0:collision){
+        case 0:
+        	return "NA";
         case 1:
         	return "Deux véhicules - frontale";
 		case 2:
@@ -151,6 +159,8 @@ public class computeConditions {
      */
     public static String computeLocalisation(Integer localisation){
     	switch(localisation == null? 0:localisation){
+    	case 0:
+        	return "NA";
     	case 1:
     		return "Hors agglomération";
     	case 2:
@@ -176,7 +186,11 @@ public class computeConditions {
     	if(lum == null || localisation == null || intersection == null || atmos == null || collision == null){
     		return null;
     	} else
-    		return String.valueOf(lum) + String.valueOf(localisation) + String.valueOf(intersection) + String.valueOf(atmos) + String.valueOf(collision);
+    		return String.format("%02d", lum)
+    				+ String.format("%02d", localisation)
+    				+ String.format("%02d", intersection)
+    				+ String.format("%02d", atmos)
+    				+ String.format("%02d", collision);
     }
     
     
