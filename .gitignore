@@ -1,5 +1,3 @@
-*
-!workspace\BI_ACCIDENT\code
-!workspace\BI_ACCIDENT\process
-!workspace\BI_ACCIDENT\metadata
-!workspace\BI_ACCIDENT\sqlPatterns
+workspace/.*
+workspace/BI_ACCIDENT/.*
+!.gitignore
