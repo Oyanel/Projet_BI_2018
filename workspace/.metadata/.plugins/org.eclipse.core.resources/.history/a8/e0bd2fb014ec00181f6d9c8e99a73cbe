@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_kN8j4WTTEeifUqPZ7YpSYA" id="_kN8j4GTTEeifUqPZ7YpSYA" label="Temps_Dim" creationDate="2018-05-31T15:07:26.622+0200" modificationDate="2018-10-25T09:24:57.522+0200" version="0.1" statusCode="" item="_kN8j42TTEeifUqPZ7YpSYA" displayName="Temps_Dim">
+    <author href="../talend.project#_01BdMNbJEeiqaqALDNJrHQ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_5KUQMNbOEeiqaqALDNJrHQ" path="" locked="true" lockDate="2018-11-19T17:03:07.972+0100">
+    <locker href="../talend.project#_01BdMNbJEeiqaqALDNJrHQ"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_kN8j42TTEeifUqPZ7YpSYA" property="_kN8j4WTTEeifUqPZ7YpSYA" state="_5KUQMNbOEeiqaqALDNJrHQ">
+    <process href="Temps_Dim_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

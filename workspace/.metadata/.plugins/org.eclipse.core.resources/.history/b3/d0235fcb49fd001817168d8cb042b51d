@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_DVUkPNeWEeiGmZQZxsxQyQ" id="_DVKzMNeWEeiGmZQZxsxQyQ" label="vehicule_2005" creationDate="2018-10-24T16:06:50.339+0200" modificationDate="2018-10-24T11:01:56.157+0200" version="0.1" statusCode="" item="_DVUkPteWEeiGmZQZxsxQyQ" displayName="vehicule_2005">
+    <author href="../../talend.project#_01BdMNbJEeiqaqALDNJrHQ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_DVUkPdeWEeiGmZQZxsxQyQ" path="" locked="true" lockDate="2018-12-11T14:36:37.149+0100">
+    <locker href="../../talend.project#_01BdMNbJEeiqaqALDNJrHQ"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:DelimitedFileConnectionItem xmi:id="_DVUkPteWEeiGmZQZxsxQyQ" property="_DVUkPNeWEeiGmZQZxsxQyQ" state="_DVUkPdeWEeiGmZQZxsxQyQ">
+    <connection href="vehicule_2005_0.1.item#_DVUkMNeWEeiGmZQZxsxQyQ"/>
+  </TalendProperties:DelimitedFileConnectionItem>
+</xmi:XMI>
