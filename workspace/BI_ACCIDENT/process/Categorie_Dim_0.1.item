@@ -158,12 +158,12 @@
     <elementParameter field="TEXT" name="LABEL" value="Categorie"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-      <column comment="" key="false" length="2" name="categorie_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="categorie_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="groupe" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="categorie" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="2" name="categorie_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="categorie_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="groupe" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="categorie" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -183,7 +183,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="output" name="output">
-      <column comment="" key="true" length="6" name="categorie_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="255" name="categorie_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="groupe_categorie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="categorie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
@@ -191,12 +191,12 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output">
-        <mapperTableEntries name="categorie_id" expression="row1.categorie_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="categorie_id" expression="row1.categorie_id " type="id_String" nullable="true"/>
         <mapperTableEntries name="groupe_categorie" expression="row1.groupe " type="id_String" nullable="true"/>
         <mapperTableEntries name="categorie" expression="row1.categorie " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="categorie_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="categorie_id" type="id_String" nullable="true"/>
         <mapperTableEntries name="groupe" type="id_String" nullable="true"/>
         <mapperTableEntries name="categorie" type="id_String" nullable="true"/>
       </inputTables>
@@ -259,12 +259,12 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="output" name="tMysqlOutput_1">
-      <column comment="" key="true" length="6" name="categorie_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="255" name="categorie_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="6" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="groupe_categorie" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="255" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="categorie" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="output" name="REJECT">
-      <column comment="" key="true" length="6" name="categorie_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="255" name="categorie_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="6" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="groupe_categorie" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="255" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="categorie" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="255" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>

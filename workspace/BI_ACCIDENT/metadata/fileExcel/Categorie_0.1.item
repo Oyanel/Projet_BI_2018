@@ -7,7 +7,7 @@
   </TalendMetadata:FileExcelConnection>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_LGGiAdgcEeiz366uvfUTKw" name="default" dataManager="_LGGiANgcEeiz366uvfUTKw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LGGiAtgcEeiz366uvfUTKw" id="_Gq2esNgcEeiz366uvfUTKw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LGGiA9gcEeiz366uvfUTKw" label="categorie_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LGGiA9gcEeiz366uvfUTKw" label="categorie_id" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LGGiBNgcEeiz366uvfUTKw" label="groupe" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LGGiBdgcEeiz366uvfUTKw" label="categorie" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
